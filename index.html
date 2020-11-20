@@ -8,6 +8,13 @@
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
 
+    <!-- Mailchimp-->
+    <script id="mcjs">
+        ! function(c, h, i, m, p) {
+            m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
+        }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/df88199b42a66f8cf8c8c3b70/f55a6025b608c7414f4cb4203.js");
+    </script>
+
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
 
@@ -25,14 +32,6 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Mailchimp-->
-    <script id="mcjs">
-        ! function(c, h, i, m, p) {
-            m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
-        }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/df88199b42a66f8cf8c8c3b70/f55a6025b608c7414f4cb4203.js");
-    </script>
-
 </head>
 
 <body>
@@ -434,7 +433,8 @@
                 </div>
                 <div class="col-md-6 appointment pl-md-5 ftco-animate">
                     <h3 class="mb-3">Appointments</h3>
-                    <form action="#" class="appointment-form">
+                    <form name="contact" method="POST" data-netlify="true">
+                        <!-- <form action="#" class="appointment-form"> -->
                         <div class="row form-group d-flex">
                             <div class="col-md-6">
                                 <input type="text" class="form-control" placeholder="First Name" required>
@@ -447,7 +447,7 @@
                             <div class="col-md-6">
                                 <div class="input-wrap">
                                     <div class="icon"><span class="ion-md-calendar"></span></div>
-                                    <input type="text" id="appointment_date" class="form-control" placeholder="Date" required>
+                                    <input type="datetime-local" id="appointment_date" class="form-control" placeholder="Date" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
