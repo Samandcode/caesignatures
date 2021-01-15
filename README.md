@@ -1,2 +1,1 @@
 # Caesignatures
-Beauty by Caesignatures
